@@ -1,0 +1,302 @@
+.bg-purple {
+  background-color: #800a7a;
+}
+
+.bg-yellow {
+  background-color: #f1b301;
+}
+
+body {
+  header {
+    background-image: linear-gradient(to right, white 63%, #800a7a 37%);
+
+    .container {
+      .row {
+        position: relative;
+        .col-8 {
+          .nav-link {
+            font-size: 14px;
+            color: #000000;
+          }
+
+          .taste{
+            h3{
+              font-size: 80px;
+            }
+            p{
+              font-size: 18px;
+            }
+            .row{
+              .col-5{
+                .card{
+                  background:{
+                    image: url("../images/41.png");
+                    size: 100%;
+                    repeat: no-repeat;
+                  };
+                  button{
+                    background-color: rgba(255,255,255,0.2);
+                    width: 119px;
+                    height: 40px;
+                    border-radius: 19px;
+                    span{
+                      font-size: 16px;
+                      color: white;
+                    }
+                  }
+                  p{
+                    font-size: 34px;
+                    color: #e76a06;
+                    width: 70px;
+                  }
+                }
+                &:nth-child(2){
+                  .card{
+                    background: {
+                      image: url("../images/kv menu.png");
+                      size: 100%;
+                      repeat: no-repeat;
+                    };
+
+                    p{
+                      width: 100px;
+                      color: #FC96F7;
+                    }
+                    button{
+                      width: 174px;
+                    }
+                  }
+
+                }
+              }
+            }
+          }
+        }
+
+        .col-4 {
+          color: white;
+
+          .col-5 {
+
+            p {
+              font-size: 24px;
+            }
+
+            span {
+              font-size: 14px;
+            }
+            img{
+              width: 18px;
+              height: 18px;
+            }
+
+            &:nth-child(3) {
+              position: relative;
+
+              img {
+                &:nth-child(2) {
+                  position: absolute;
+                  top: 10px;
+                  left: 26px;
+                }
+              }
+            }
+          }
+        }
+
+        .burger{
+          position: absolute;
+          top: 185px;
+          right: -35px;
+          img{
+            width: 621px;
+            height: 524px;
+          }
+        }
+      }
+    }
+
+  }
+
+  main{
+    .nav-pills{
+      .nav-item{
+        .nav-link{
+          font-size: 20px;
+          color: #000000;
+        }
+        &:hover{
+          background-color: #f1b301;
+          border-radius: 27px;
+          .nav-link{
+            color: white;
+          }
+        }
+      }
+
+      button{
+        width: 160px;
+        height: 54px;
+        border-radius: 27px;
+        background-color: #f5f5f5;
+
+        span{
+          font-size: 20px;
+        }
+      }
+    }
+
+    .tab-content{
+      .tab-pane{
+        .col-6{
+          .row{
+            .col-5{
+              position: relative;
+              .pepper{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: rgba(255,255,255,0.25);
+                backdrop-filter: blur(8.15485);
+                box-shadow: 0px 7px 40px rgba(238,39,68,0.36);
+                position: absolute;
+                top: 3px;
+              }
+            }
+            .col-7{
+              h5{
+                font-size: 24px;
+              }
+              .plus-btn{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: #f1b301;
+                border: 0;
+              }
+            }
+          }
+
+          &:nth-child(2){
+            .row{
+              .col-7{
+                h5{
+                  span{
+                    img{
+                      width: 24px;
+                      height: 28px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+
+  footer{
+
+    section{
+
+      &#book{
+
+        background-color: #800a7a;
+
+        .container{
+          .row{
+            .col-6{
+              .card{
+                background-color: #800a7a;
+                h2{
+                  font-size: 52px;
+                }
+                button{
+                  border-radius: 46px;
+                }
+              }
+            }
+            .col-6{
+              .phone{
+                position: relative;
+                img{
+                  width: 880px;
+                  height: 666px;
+                  position: absolute;
+                  right: -55px;
+                  top: -220px;
+                }
+              }
+
+              .path{
+                position: relative;
+                img{
+                  position: absolute;
+                  right: -58px;
+                  top: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &#contact{
+        .container{
+          .row{
+            .col-2{
+              .nav{
+                h6{
+                  font-size: 20px;
+                }
+                .nav-link{
+                  font-size: 14px;
+                }
+              }
+            }
+
+            .col-4{
+              .card{
+                .card-body{
+                  h6{
+                    font-size: 20px;
+                  }
+                  h5{
+                    font-size: 25px;
+                  }
+                  p{
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+}
+
+@media(max-width: 991px){
+  header{
+    background-image: linear-gradient(white, #800a7a);
+  }
+  main{
+    .nav{
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      .nav-pills{
+        button{
+          display: block;
+
+        }
+      }
+    }
+  }
+}
